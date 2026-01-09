@@ -2,12 +2,10 @@ name: 'Build & Test (Linux)'
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "ci_dev" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "ci_dev" ]
     types: [opened, synchronize, reopened, labeled]
-
-
 
 jobs:
   build:
